@@ -4,8 +4,6 @@
 import { Timer, URL_STATE_DELIMITER } from "./utils";
 import type { UserProfile } from "./User";
 
-const OidcScope = "openid";
-
 /**
  * @public
  * @see https://openid.net/specs/openid-connect-core-1_0.html#AuthResponse
@@ -82,6 +80,6 @@ export class SigninResponse {
     }
 
     public get isOpenId(): boolean {
-        return this.scope?.split(" ").includes(OidcScope) || !!this.id_token;
+        return !!this.id_token;
     }
 }
