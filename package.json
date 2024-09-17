@@ -1,5 +1,5 @@
 {
-  "name": "oidc-client-ts",
+  "name": "@adrianfrith/oidc-client-ts",
   "version": "3.0.1",
   "description": "OpenID Connect (OIDC) & OAuth2 client library",
   "repository": {
